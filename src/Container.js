@@ -2,7 +2,7 @@ import React from 'react'
 
 function Container() {
   return (
-    <Container> Container </Container>
+    <div className='container'>Container</div>
   )
 }
 

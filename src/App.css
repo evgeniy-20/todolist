@@ -1,8 +1,17 @@
 .App {
   text-align: center;
 }
-
 .header {
   text-align: center;
-  font-size: 56px;
+  font-size: 54px;
+}
+
+.container {
+  text-align: center;
+  font-size: 54px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 54px;
 }
