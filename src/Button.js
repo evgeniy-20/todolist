@@ -5,7 +5,7 @@ function Button() {
   return (
     <div>
         <p>Ти на тиснув {count} раз(ів)</p>
-        <button onClick={() => setCount(count + 1)}>Нажми на меня</button>
+        <button onClick={() => setCount(count + 1)}>Натисни на мене </button>
     </div>
   )
 }
