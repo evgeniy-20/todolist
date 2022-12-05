@@ -2,18 +2,22 @@ import React, {useState} from 'react'
 
 function Inputexample() {
   const [value, setValue] = useState('')
-  const [result, setResult] = useState('')
+  const [notes, setNotes] = useState([]);
+
+  const result = notes.map((note, index) => {
+		return <ul><li key={index}>{note}</li></ul>;
+	});
 
   const handleChange  = (event) => {
     setValue(event.target.value);
   }
   const handleClick = () => {
-    setResult(value);
+    setNotes([...notes, value]);
   }
   return (
     <div>
+        {result}
         <input value={value} onChange={handleChange} />
-		    <p>Результат: {result}</p>
         <button onClick={handleClick}>Натисни на мене</button>
     </div>
   )
