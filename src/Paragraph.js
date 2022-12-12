@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 
 function Paragraph() {
-  const [checkbox, setChecked] = useState('checkbox')
+  const [checkbox, setChecked] = useState(true)
   const getCheckbox = () => {
-    if(checkbox === true) {
-      setChecked(true)
+    if(!checkbox === true) {
+      setChecked('checkbox')
     } else {
       setChecked(false)
     }
