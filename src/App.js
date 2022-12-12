@@ -6,6 +6,7 @@ import Button from './Button';
 import List from './List';
 import Input from './input';
 import Inputexample from './Inputexample';
+import Paragraph from './Paragraph';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <List />
       <Input />
       <Inputexample />
+      <Paragraph />
     </div>
   );
 }

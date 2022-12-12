@@ -18,6 +18,7 @@ function Inputexample() {
     <div>
         {result}
         <input value={value} onChange={handleChange} />
+        <input type="checkbox" onChange={handleChange} />
         <button onClick={handleClick}>Натисни на мене</button>
     </div>
   )
