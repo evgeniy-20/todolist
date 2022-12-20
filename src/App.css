@@ -28,6 +28,6 @@
   width: 300px;
   height: 300px;
 }
-.checkbox {
-  text-decoration: underline;
+.crossed {
+  text-decoration: line-through;
 }

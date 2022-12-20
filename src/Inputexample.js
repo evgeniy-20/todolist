@@ -17,8 +17,7 @@ function Inputexample() {
   return (
     <div>
         {result}
-        <input value={value} onChange={handleChange} />
-        <input type="checkbox" onChange={handleChange} />
+        <input type='text' value={value} onChange={handleChange} />
         <button onClick={handleClick}>Натисни на мене</button>
     </div>
   )

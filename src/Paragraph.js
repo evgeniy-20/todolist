@@ -4,15 +4,16 @@ function Paragraph() {
   const [checkbox, setChecked] = useState(true)
   const getCheckbox = () => {
     if(!checkbox === true) {
-      setChecked('checkbox')
+      setChecked(true)
     } else {
       setChecked(false)
     }
   }
+  const className  = (checkbox === true ) ? 'crossed' : '';  
   return (
     <div>
         <input type='checkbox' checked={checkbox} onClick={getCheckbox}   />
-        <p className= {checkbox}>Світло вимикають по графіку!!! {checkbox}</p>
+        <p className= {className}>Світло вимикають по графіку!!!</p>
     </div>
   )
 }
