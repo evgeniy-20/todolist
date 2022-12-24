@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 function Inputexample() {
-  const [value, setValue] = useState('')
+  const [value, setValue] = useState(null)
   const [notes, setNotes] = useState([]);
 
   const result = notes.map((note, index) => {
@@ -11,13 +11,14 @@ function Inputexample() {
   const handleChange  = (event) => {
     setValue(event.target.value);
   }
-  const handleClick = () => {
+  const handleClick = () => { 
     setNotes([...notes, value]);
+    setValue('');
   }
   return (
     <div>
         {result}
-        <input type='text' value={value} onChange={handleChange} />
+        <input  value={value} onChange={handleChange} />
         <button onClick={handleClick}>Натисни на мене</button>
     </div>
   )
